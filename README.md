@@ -13,7 +13,7 @@ Core goals:
 - Document conventions and operational patterns so teams can compose reliable agentic systems.
 - Support incremental growth from single skills to complete multi-agent workflows.
 ---
-<img src="./Anatomy%20of%20the%20Agentic%20Stack.png" alt="Anatomy of the Agentic Stack" width="60%" />
+<img src="./Anatomy%20of%20the%20Agentic%20Stack.png" alt="Anatomy of the Agentic Stack" width="100%" />
 
 ## Tech Stack
 
