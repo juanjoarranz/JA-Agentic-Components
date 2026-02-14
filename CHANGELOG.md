@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 ## [2026-02-14]
 
+### ✨ feat: Added obsidian plugin helper skill
+
+- Added a complete Obsidian plugin helper skill package, including the main SKILL definition, command prompts, detailed reference guides, and an interactive boilerplate generator script. Updated repository documentation to register and describe the new skill so it is discoverable from both project guidance and user-facing README sections. This improves the repository's coverage for Obsidian plugin workflows by providing opinionated best practices, accessibility requirements, and submission guidance in a reusable skill format.
+
 ### 🐛 fix: Fixed skill frontmatter parsing
 
 - Removed non-standard frontmatter wrappers from the readme-maintainer skill and normalized its header format so the skills indexer can parse it consistently. Simplified the feature-docs frontmatter to the minimal compatible fields required by the installer scanner. This restores deterministic discovery behavior for skill installation flows and prevents false "No matching skills found" results for valid skills.
@@ -32,4 +36,3 @@ All notable changes to this project will be documented in this file.
 - Established the first project snapshot as the source of truth for reusable agentic components.
 - Added foundational documentation and licensing assets to accelerate contributor onboarding and standardize project conventions.
 - Created a stable baseline for iterative additions of skills, custom agents, hooks, and orchestration resources.
-

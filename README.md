@@ -106,7 +106,15 @@ Current implemented modules:
 	- "Create quick feature docs for this module using feature-docs."
 	- "Generate a verified single-file feature README with code references."
 
-### 4) project-memory
+### 4) obsidian-plugin-helper
+
+- **Path:** `.agents/skills/obsidian-plugin-helper/SKILL.md`
+- **Description:** Provides comprehensive Obsidian plugin development guidance, including ESLint rules, TypeScript best practices, API usage (`requestUrl` vs `fetch`), UI/UX standards, and submission requirements.
+- **Example usage prompts:**
+	- "Help me implement this Obsidian plugin feature following best practices."
+	- "Review this `main.ts` and `manifest.json` using the obsidian-plugin-helper guidance."
+
+### 5) project-memory
 
 - **Path:** `.agents/skills/project-memory/SKILL.md`
 - **Description:** Sets up and maintains `docs/project_notes/` to track bugs, decisions, key facts, and work history.
@@ -114,7 +122,7 @@ Current implemented modules:
 	- "Set up project memory for this repository."
 	- "Log this bug fix and update our project memory notes."
 
-### 5) readme-maintainer
+### 6) readme-maintainer
 
 - **Path:** `.agents/skills/readme-maintainer/SKILL.md`
 - **Description:** Creates or updates the root `README.md` based on repository conventions and verified project context.
@@ -134,6 +142,7 @@ Current implemented modules:
 │       ├── changelogger/
 │       ├── commiter/
 │       ├── feature-docs/
+│       ├── obsidian-plugin-helper/
 │       ├── project-memory/
 │       └── readme-maintainer/
 └── .vscode/

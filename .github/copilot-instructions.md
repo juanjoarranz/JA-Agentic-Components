@@ -23,6 +23,7 @@ See [project-memory/](.agents/skills/project-memory/) and [readme-maintainer/](.
 - [changelogger](.agents/skills/changelogger/SKILL.md): Updates `CHANGELOG.md` before commit finalization.
 - [commiter](.agents/skills/commiter/SKILL.md): Creates Conventional Commits with detailed commit messages.
 - [feature-docs](.agents/skills/feature-docs/SKILL.md): Generates verified, single-file feature documentation.
+- [obsidian-plugin-helper](.agents/skills/obsidian-plugin-helper/SKILL.md): Provides comprehensive Obsidian plugin development guidance (ESLint rules, TypeScript practices, API usage, UX standards, and submission requirements).
 - [project-memory](.agents/skills/project-memory/SKILL.md): Sets up and maintains project memory under `docs/project_notes/`.
 - [readme-maintainer](.agents/skills/readme-maintainer/SKILL.md): Creates or updates `README.md` following development conventions.
 
