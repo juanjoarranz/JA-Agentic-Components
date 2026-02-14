@@ -1,18 +1,6 @@
 ---
 name: feature-docs
 description: "[Docs] Generate single-file feature documentation with verified test cases. Use for quick feature docs, feature README, and single-file verified documentation in non-enterprise projects. Outputs one markdown file with code evidence. For enterprise module hierarchy, use business-feature-docs instead."
-allowed-tools: Read, Write, Edit, Bash, Grep, Glob, Task, TodoWrite
-metadata:
-	category: documentation
-	scope: feature-level
-	stack: fullstack
-	output: single-markdown
-	triggers:
-		- quick feature docs
-		- feature readme
-		- single file docs
-		- verified documentation
-	alternative_skill: business-feature-docs
 ---
 
 # Feature Documentation Generation & Verification

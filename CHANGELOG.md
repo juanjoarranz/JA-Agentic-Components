@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 ## [2026-02-14]
 
+### 🐛 fix: Fixed skill frontmatter parsing
+
+- Removed non-standard frontmatter wrappers from the readme-maintainer skill and normalized its header format so the skills indexer can parse it consistently. Simplified the feature-docs frontmatter to the minimal compatible fields required by the installer scanner. This restores deterministic discovery behavior for skill installation flows and prevents false "No matching skills found" results for valid skills.
+
 ### 🔧 chore: Updated docs and changelog flow
 
 - Standardized npx skill installation guidance across project and skill READMEs by documenting workspace-local as default, global as secondary, and clear -g/-y behavior with command examples.

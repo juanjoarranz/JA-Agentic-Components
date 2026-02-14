@@ -1,4 +1,3 @@
-````skill
 ---
 name: readme-maintainer
 description: Create or update a project README.md following development conventions and repository structure. Use when the user asks to "create README", "update README", "refresh project docs", "document setup", or "improve repository documentation".
@@ -74,4 +73,3 @@ After creating/updating `README.md`, return:
 ## Reference Template
 
 Use `references/readme-template.md` as the default skeleton and adapt it to the target project.
-````
