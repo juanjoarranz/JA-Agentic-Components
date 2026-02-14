@@ -34,6 +34,43 @@ git clone <your-fork-or-repo-url>
 cd <repo-folder>
 ```
 
+### Install a single skill from a GitHub remote (npx)
+
+Use this when you want to install only one skill from a remote skills repository:
+
+Flag reference:
+
+- `-g`: installs the skill globally (user-level, available across projects).
+- `-y`: auto-confirms prompts (non-interactive mode).
+
+Default (workspace/project-local) install:
+
+```bash
+npx skills add <owner>/<repo>@<skill> -y
+```
+
+Workspace note: omitting `-g` keeps the installation scoped to the current workspace/project.
+
+Global install (user-level):
+
+```bash
+npx skills add <owner>/<repo>@<skill> -g -y
+```
+
+CLI note: `npx -y ...` is an `npx` flag, while `... -y` at the end is parsed by `skills add`.
+
+Workspace-local example:
+
+```bash
+npx skills add juanjoarranz/JA-Agentic-Components@project-memory -y
+```
+
+Global example:
+
+```bash
+npx skills add juanjoarranz/JA-Agentic-Components@project-memory -g -y
+```
+
 ## Components in this Repository
 
 This repository includes reusable components across these domains:

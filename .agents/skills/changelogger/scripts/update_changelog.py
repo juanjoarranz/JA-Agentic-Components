@@ -17,6 +17,23 @@ EMOJI_MAP = {
     'revert': '⏪'
 }
 
+def format_body_as_bullets(body):
+    if not body:
+        return ""
+
+    lines = [line.strip() for line in body.splitlines() if line.strip()]
+    if not lines:
+        return ""
+
+    bullets = []
+    for line in lines:
+        if line.startswith(('- ', '* ')):
+            bullets.append(f"- {line[2:].strip()}")
+        else:
+            bullets.append(f"- {line}")
+
+    return "\n".join(bullets)
+
 def parse_commit_message(msg):
     # Split into subject and body
     parts = msg.split('\n', 1)
@@ -50,7 +67,9 @@ def update_changelog(full_message, filename='CHANGELOG.md'):
     # Format the full entry
     new_entry = f"{entry_header}\n\n"
     if body:
-        new_entry += f"{body}\n\n"
+        body_bullets = format_body_as_bullets(body)
+        if body_bullets:
+            new_entry += f"{body_bullets}\n\n"
     
     if not os.path.exists(filename):
         with open(filename, 'w', encoding='utf-8') as f:

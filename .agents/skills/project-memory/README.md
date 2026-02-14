@@ -18,6 +18,29 @@ cd your-project
 # In Claude Code, type: /project-memory
 ```
 
+## Install with npx (single skill from GitHub)
+
+Install only this skill from this repository:
+
+Flag reference:
+
+- `-g`: installs the skill globally (user-level, available across projects).
+- `-y`: auto-confirms prompts (non-interactive mode).
+
+Default (workspace/project-local) install:
+
+```bash
+npx skills add juanjoarranz/JA-Agentic-Components@project-memory -y
+```
+
+Workspace note: omitting `-g` keeps the installation scoped to the current workspace/project.
+
+Global install (user-level):
+
+```bash
+npx skills add juanjoarranz/JA-Agentic-Components@project-memory -g -y
+```
+
 ## What This Skill Does
 
 When invoked in a project, this skill:

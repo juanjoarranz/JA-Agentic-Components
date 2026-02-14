@@ -6,6 +6,29 @@ Skill for generating **single-file feature documentation** with verified code ev
 
 Generate comprehensive single-file feature documentation with verified test cases using the mandatory GOLD STANDARD template.
 
+## Install with npx (single skill)
+
+Install only this skill from the remote repository:
+
+Flag reference:
+
+- `-g`: installs the skill globally (user-level, available across projects).
+- `-y`: auto-confirms prompts (non-interactive mode).
+
+Default (workspace/project-local) install:
+
+```bash
+npx skills add juanjoarranz/JA-Agentic-Components@feature-docs -y
+```
+
+Workspace note: omitting `-g` keeps the installation scoped to the current workspace/project.
+
+Global install (user-level):
+
+```bash
+npx skills add juanjoarranz/JA-Agentic-Components@feature-docs -g -y
+```
+
 ## What it does
 
 - Produces comprehensive feature docs using a mandatory **26-section** structure.
