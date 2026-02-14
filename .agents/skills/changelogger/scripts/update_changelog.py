@@ -39,7 +39,7 @@ def parse_commit_message(msg):
     parts = msg.split('\n', 1)
     subject = parts[0].strip()
     body = parts[1].strip() if len(parts) > 1 else ""
-    
+
     # Extract type and description from subject
     # Pattern: type(scope): description or type: description
     match = re.match(r'^(\w+)(?:\(([^)]+)\))?:\s*(.*)$', subject)
@@ -54,23 +54,23 @@ def update_changelog(full_message, filename='CHANGELOG.md'):
     if not full_message:
         print("Error: No commit message provided.")
         return
-    
+
     ctype, scope, desc, body = parse_commit_message(full_message)
     emoji = EMOJI_MAP.get(ctype, '🔹')
     date_str = datetime.now().strftime("%Y-%m-%d")
     date_header = f"## [{date_str}]"
-    
+
     # Format the header: ### ✨ feat: add something
     scope_part = f"({scope})" if scope else ""
     entry_header = f"### {emoji} {ctype}{scope_part}: {desc}"
-    
+
     # Format the full entry
     new_entry = f"{entry_header}\n\n"
     if body:
         body_bullets = format_body_as_bullets(body)
         if body_bullets:
             new_entry += f"{body_bullets}\n\n"
-    
+
     if not os.path.exists(filename):
         with open(filename, 'w', encoding='utf-8') as f:
             f.write(f"# Changelog\n\nAll notable changes to this project will be documented in this file.\n\n{date_header}\n\n{new_entry}")
@@ -79,7 +79,7 @@ def update_changelog(full_message, filename='CHANGELOG.md'):
 
     with open(filename, 'r', encoding='utf-8') as f:
         content = f.read()
-    
+
     # Check for duplicates (basic check)
     if entry_header in content:
         print(f"Entry '{entry_header}' already exists.")
@@ -107,7 +107,7 @@ def update_changelog(full_message, filename='CHANGELOG.md'):
             insert_pos = line_break + 1
             while insert_pos < len(content) and content[insert_pos] in ['\n', '\r', ' ']:
                 insert_pos += 1
-            
+
             content = content[:insert_pos] + new_entry + content[insert_pos:]
         else:
             # Date header was at the very end of file
@@ -115,14 +115,14 @@ def update_changelog(full_message, filename='CHANGELOG.md'):
 
     with open(filename, 'w', encoding='utf-8') as f:
         f.write(content)
-    
+
     print(f"Successfully updated {filename} with new entry.")
 
 if __name__ == "__main__":
     if len(sys.argv) < 2:
         print("Usage: py update_changelog.py \"commit message\" [filename]")
         sys.exit(1)
-        
+
     msg = sys.argv[1]
     target_file = sys.argv[2] if len(sys.argv) > 2 else 'CHANGELOG.md'
     update_changelog(msg, target_file)
