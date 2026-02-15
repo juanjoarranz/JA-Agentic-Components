@@ -1,6 +1,6 @@
 # JA-Agentic-Components
 
-Unified repository for building and maintaining reusable components of the agentic stack: Skills, Custom Agents, Hooks, and Orchestration assets.
+Unified repository for building and maintaining reusable components of the agentic stack: Skills, Custom Agents, Hooks, Prompts, and Orchestration assets.
 
 ## Project Objective
 
@@ -8,7 +8,7 @@ This project serves as a single source of truth for reusable AI agent building b
 
 Core goals:
 
-- Centralize **Skills**, **Custom Agents**, **Hooks**, and **Orchestration** resources in one place.
+- Centralize **Skills**, **Custom Agents**, **Hooks**, **Prompts**, and **Orchestration** resources in one place.
 - Make components easy to discover, reuse, and evolve across multiple AI coding environments.
 - Document conventions and operational patterns so teams can compose reliable agentic systems.
 - Support incremental growth from single skills to complete multi-agent workflows.

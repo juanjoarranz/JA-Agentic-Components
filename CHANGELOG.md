@@ -2,6 +2,10 @@
 
 ## [2026-02-15]
 
+### 📚 docs: Updated scope with prompts component
+
+- Expanded the README project summary and objective bullets to include Prompts as a first-class repository component. This aligns the top-level documentation with the current agentic stack taxonomy and reduces ambiguity about what assets are maintained here. The change improves discoverability for contributors by making the component scope explicit in the opening section.
+
 ### 📚 docs: Updated README with prompt resource
 
 - Extended the repository domain list in README to explicitly include prompts for software development, aligning the documented scope with the actual reusable assets maintained in this project. Added a concise reference entry to the Developer Prompt Mastery PDF under Resources so contributors can quickly access practical prompting guidance for engineering workflows. This improves discoverability of prompt-related materials and keeps repository documentation consistent and easier to navigate for onboarding and maintenance.
