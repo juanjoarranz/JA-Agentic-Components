@@ -79,6 +79,11 @@ This repository includes reusable components across these domains:
 - Custom Agents
 - Hooks
 - Orchestration
+- Prompts for software development
+
+Additional resource:
+
+- [Developer Prompt Mastery](./Resources/Developer_Prompt_Mastery.pdf): concise guide with practical prompt patterns to improve software development workflows.
 
 Current implemented modules:
 

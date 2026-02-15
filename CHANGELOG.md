@@ -2,6 +2,10 @@
 
 ## [2026-02-15]
 
+### 📚 docs: Updated README with prompt resource
+
+- Extended the repository domain list in README to explicitly include prompts for software development, aligning the documented scope with the actual reusable assets maintained in this project. Added a concise reference entry to the Developer Prompt Mastery PDF under Resources so contributors can quickly access practical prompting guidance for engineering workflows. This improves discoverability of prompt-related materials and keeps repository documentation consistent and easier to navigate for onboarding and maintenance.
+
 ### 📚 docs: Added Prompt Mastery PDF resource
 
 - Added a curated PDF guide under Resources to centralize advanced prompt engineering reference material for contributors. The file is stored as a static documentation asset so it can be versioned with the repository and shared consistently across agent-skill development workflows. This improves onboarding and keeps prompt-quality guidance discoverable without relying on external links.
