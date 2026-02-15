@@ -1,5 +1,11 @@
 # Changelog
 
+## [2026-02-15]
+
+### 📚 docs: Added Prompt Mastery PDF resource
+
+- Added a curated PDF guide under Resources to centralize advanced prompt engineering reference material for contributors. The file is stored as a static documentation asset so it can be versioned with the repository and shared consistently across agent-skill development workflows. This improves onboarding and keeps prompt-quality guidance discoverable without relying on external links.
+
 All notable changes to this project will be documented in this file.
 
 ## [2026-02-14]
